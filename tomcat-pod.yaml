@@ -1,1 +1,11 @@
-
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tomcat-pod
+  namespace: jenkins
+spec:
+  containers:
+    - name: tomcat
+      image: your-dockerhub-username/tomcat-app:latest
+      ports:
+        - containerPort: 8080
