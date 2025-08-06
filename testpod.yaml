@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: tomcat-pod
-  namespace: default
+  namespace: jenkins
 spec:
   containers:
     - name: tomcat
